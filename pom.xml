@@ -15,15 +15,15 @@
     </properties>
 
     <repositories>
-        <!-- Stable PaperMC Central Repo -->
+        <!-- PaperMC Public Repo -->
         <repository>
             <id>papermc</id>
             <url>https://papermc.io</url>
         </repository>
-        <!-- Correct GeyserMC Central Repo -->
+        <!-- JitPack Mirror Network (Guarantees Geyser API availability) -->
         <repository>
-            <id>geysermc-releases</id>
-            <url>https://opencollab.dev</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
@@ -35,11 +35,11 @@
             <version>1.21-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Geyser API (Uses a stable release build to avoid snapshot server down times) -->
+        <!-- Geyser API pulled via JitPack -->
         <dependency>
-            <groupId>org.geysermc.geyser</groupId>
-            <artifactId>api</artifactId>
-            <version>2.4.2-RELEASE</version>
+            <groupId>com.github.GeyserMC</groupId>
+            <artifactId>Geyser</artifactId>
+            <version>2.4.2-b661</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -53,5 +53,4 @@
             </resource>
         </resources>
     </build>
-</project>
 </project>
