@@ -1,0 +1,9 @@
+id: customitemframework
+name: CustomItemFrameworkExtension
+main: com.customitemframework.geyserext.CustomItemFrameworkExtension
+version: 1.0.0
+# The Geyser API version this extension was compiled against - bump this
+# together with <geyser.api.version> in the parent pom.xml, and re-check
+# CustomItemFrameworkExtension's registration call against the matching
+# Geyser API release notes when you do.
+api: 2.10.0
